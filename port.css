@@ -41,47 +41,19 @@ ul, li {
 
 
 /******************** header ********************/
-
-#header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 380px;
-    background: linear-gradient(to right, #e2fbed, #c8e3ef, #dfdcf0);
+.slideshow {
+    position : relative;
+    overflow: hidden;
+    min-width : 960px;
+    height: 465px;
 }
 
-#header .logo {
-    display: block;
+.slideshow img {
+    position: absolute;
+    display: none;
+    left: 50%;
+    margin-left: -800px;
 }
-/*
-#header .logo-name {
-    display: block;
-    font-family: 'Yesteryear', cursive;
-    display: block;
-    position: relative;
-    top: -8px;
-    left: -60px;
-    font-size: 36px;
-    color: #ffffff;
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-}
-*/
-
-#header .logo-title {
-    font-size: 90px;
-    color:  #fffeed;
-    letter-spacing: 2px;
-}
-
-#header .logo-desc {
-    display: block;
-    font-size: 30px;
-    color:#fffeed;
-    text-align: center;
-    margin-top: 50px;
-}
-
 /******************** nav ********************/
 #h-nav {
     padding: 10px;
@@ -99,6 +71,7 @@ ul, li {
     font-size: 25px;
     padding: 0 20px;
 }
+
 
 #h-nav li:last-child {
     margin-right: 0;
@@ -118,9 +91,10 @@ ul, li {
     -moz-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
     transform: translate3d(0, 0, 0);}
 
-.nab-aicon {
-    margin-left: 5px;
+.nav-aicon {
+    margin-left: 7px;
 }
+
 
 /******************** section ********************/
 .section .inner {
