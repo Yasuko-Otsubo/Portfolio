@@ -9,28 +9,38 @@
     <meta property='og:url' content='URL入る'>
     <meta property='og:description' content='靖子のポートフォリオです。'>
     <meta property="og:image" content="img/ogp.png">
-    <meta name="description" content="靖子のポートフォリオです。" />
+    <meta name="description" content="靖子のポートフォリオです。">
     <title>Yasuko's Portfolio</title>
-    <link rel="stylesheet"　href="https://fonts.googleapis.com/css?family=Oswald:700" >
-    <link rel="stylesheet"　href="https://fonts.googleapis.com/css?family=Open+Sans:700" >
-    <link rel="stylesheet"　href="reset.css" media="all"  type="text/css" />
-    <link rel="stylesheet"  href="port.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700" >
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+    <!--JQuery 2.2.4-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/slideshow.js"></script>
 </head>
 
 <body>
   <div id="wrapper">
     <header id="header">
-      <h1 class="logo">
-        <span class="logo-title">Yasuko Otsubo's Portfolio</span>
-        <span class="logo-desc">Web Engineer Beginner</span>
-      </h1>
+      <!--<h1 class="logo">-->
+        <div class="slideshow">
+            <img src="img/27601838_m.jpg" alt="鵜戸神宮">
+            <img src="img/291827_m.png" alt="２匹の馬">
+            <img src="img/slide-3.jpg" alt="岩場の海">
+            <img src="img/slide-4.jpg" alt="月">
+        </div>
+        <!--<span class="logo-title">Yasuko Otsubo's Portfolio</span>
+        <span class="logo-desc">Web Engineer Beginner</span>-->
     </header>
     <nav id="h-nav">
       <ul>
-        <li><i class="far fa-user fa-lg"></i><span class="nav-aicon"></span><a href="#about">ABOUT</a></li>
-        <li><i class="fas fa-desktop fa-lg"></i><span class="nav-aicon"></span><a href="#skill">SKILL</a></li>
-        <li><i class="far fa-folder-open fa-lg"></i><span class="nav-aicon"></span><a href="#works">WORKS</a></li>
+        <li><i class="fa-regular fa-user"></i><span class="nav-aicon"></span><a href="#about">ABOUT</a></li>
+        <li><i class="fa-solid fa-gears"></i><span class="nav-aicon"></span><a href="#skill">SKILL</a></li>
+        <li><i class="fa-regular fa-file"></i><span class="nav-aicon"></span><a href="#works">WORKS</a></li>
         <li><i class="far fa-envelope fa-lg"></i><span class="nav-aicon"></span><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
@@ -42,29 +52,35 @@
           </div>
           <div id="column">
             <div id="column-img">
-              <img id="img-profile" src="img/miffy.png" alt="">
+              <img src="img/rabbit.jpg" alt="うさぎ">
             </div>
             <div id="column-desc">
-              <p class="text">
+              <div class="text">
                 <br>
                 <table>
                   <tr>
                     <th>Name</th>
-                    <td>大坪　靖子(Yasuko Otsubo)</td>
+                    <td>大坪 靖子(Yasuko Otsubo)</td>
                   </tr>
                   <tr>
-                    <th>Birthday</th>
-                    <td>1992/02/07</td>
+                    <th>Birth</th>
+                    <td>1992</td>
                   </tr>
+                  <tr>
+                    <th>Favorite</th>
+                    <td>TWICE,Walking</td>
+                  </tr>
+
                   <tr>
                     <th>GitHub</th>
-                    <td><a href="https://github.com/Ohtsubo-Yasuko">yasuko</a></td>
+                    <td><a href="https://github.com/Yasuko-Otsubo/Portfolio">yasuko</a></td>
                 </table>
                 <br>
                 初めまして。<br>
                 歯科衛生士として働いてきましたが一念発起してIT業界へ<br>
-                職業訓練校に6か月通い、就職活動中です（更新日 : 2023/07/31）
-      </p>
+                職業訓練校に6か月通い、就職活動中です<br>
+                （更新日 : 2023/09/24）
+              </div>
             </div>
           </div>
         </div>
@@ -77,7 +93,7 @@
           <div class="card-wrapper">
             <div class="card">
               <div class="skill-icon">
-                <img src="img/skill/icon_skill.png" alt="">
+                <!--<img src="img/skill/icon_skill.png" alt="">-->
               </div>
               <div class="skill-desc">
                 <h3 class="s-desc-title">SQL</h3>
@@ -89,7 +105,7 @@
             </div>
             <div class="card">
               <div class="skill-icon">
-                <img src="img/skill/icon_skill.png" alt="">
+                <!--<img src="img/skill/icon_skill.png" alt="">-->
               </div>
               <div class="skill-desc">
                 <h3 class="s-desc-title">画像加工</h3>
@@ -101,7 +117,7 @@
             </div>
             <div class="card">
               <div class="skill-icon">
-                <img src="img/skill/icon_skill.png" alt="">
+                <!--<img src="img/skill/icon_skill.png" alt="">-->
               </div>
               <div class="skill-desc">
                 <h3 class="s-desc-title">HTML,css</h3>
@@ -110,12 +126,12 @@
                 </div>
                 <p class="text">HTML,CSSのコーディング<br>
                     レスポンシブデザインインタラクティブなWebページ作成<br>
-                    使用ソフト　WordPress 5.9.2</p>
+                    使用ソフト WordPress 5.9.2</p>
               </div>
             </div>
             <div class="card">
               <div class="skill-icon">
-                <img src="img/skill/icon_skill.png" alt="">
+                <!--<img src="img/skill/icon_skill.png" alt="">-->
               </div>
               <div class="skill-desc">
                 <h3 class="s-desc-title">JavaScript</h3>
@@ -128,7 +144,7 @@
             </div>
             <div class="card">
                 <div class="skill-icon">
-                  <img src="img/skill/icon_skill.png" alt="">
+                  <!--<img src="img/skill/icon_skill.png" alt="">-->
                 </div>
                 <div class="skill-desc">
                   <h3 class="s-desc-title">PHP</h3>
@@ -136,12 +152,12 @@
                     <p class="rate rate3"></p>
                   </div>
                   <p class="text">DBとの連携<br>
-                                　使用ソフト　XAMPP 8.1.2</p>
+                                 使用ソフト XAMPP 8.1.2</p>
                 </div>
               </div>
               <div class="card">
                 <div class="skill-icon">
-                  <img src="img/skill/icon_skill.png" alt="">
+                  <!--<img src="img/skill/icon_skill.png" alt="">-->
                 </div>
                 <div class="skill-desc">
                   <h3 class="s-desc-title">Python（2023/07～）</h3>
@@ -162,8 +178,8 @@
           </div>
           <div class="card-wrapper my-gallery">
             <figure class="card">
-              <a href="img/portfolio.png" data-size="500*100" class="card-img">
-                <img class="work-img" src="img/portfolio.png" alt="" />
+              <a href="https://427yasukootsubo.com">
+                <img class="work-img" src="img/portfolio.png" alt="">
               </a>
               <figcaption class="card-caption">
                 <p class="card-caption-title">ポートフォリオ</p>
@@ -173,7 +189,7 @@
             </figure>
             <figure class="card">
               <a href="img/works/comingsoon.png" data-size="980x668" class="card-img">
-                <img class="work-img" src="img/works/comingsoon.png" alt="" />
+                <!--<img class="work-img" src="img/works/comingsoon.png" alt="" />-->
               </a>
               <figcaption class="card-caption">
                 <p class="card-caption-title">ビンゴゲーム<br></p>
@@ -189,7 +205,7 @@
           <div class="sec-title-block">
             <h2 class="sec-title"><span class="sec-aicon"></span>CONTACT</h2>
             <p class="sec-desc">
-              お問合わせは下記からご連絡をください。
+              お問合わせは下記からご連絡ください。
             </p>
           </div>
           <div class="contact-wrapper">
